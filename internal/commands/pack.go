@@ -15,7 +15,7 @@ import (
 func NewPackCommand() *cobra.Command {
 	cmd := cobra.Command{
 		Use:   "pack <version> <outputdirectory>",
-		Short: "Package your Go modules",
+		Short: "Package Go module in current directory",
 		Args:  cobra.MinimumNArgs(2),
 
 		RunE: func(cmd *cobra.Command, args []string) error {
